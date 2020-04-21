@@ -6,7 +6,7 @@
     $casa1 = ['cocina','taller','cuarto'];   
 
     //Obtener los datos de un objeto
-    $tipoRoom=$_GET['tipo_room'];
+    /*$tipoRoom=$_GET['tipo_room'];
     echo json_encode($tipoRoom);
     echo "<br>";
     while ($nombre_lugar = current($casa1)) {
@@ -16,7 +16,7 @@
         }
         next($casa1);
         
-    }
+    }*/
     //obtener un objeto segun sus datos 
     $producto=$_GET['producto'];
     foreach($casa as $key => $value)
