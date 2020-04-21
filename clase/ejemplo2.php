@@ -4,7 +4,8 @@
     $cuarto = Array("Escritorio","Cama","Comoda");
     $casa = Array($cocina,$taller,$cuarto);
     $casa1 = ['cocina','taller','cuarto'];   
-
+    
+    //Añadir un elemento a cualquier array
     if('POST'==strtoupper($_SERVER['REQUEST_METHOD'])){
         $json = json_decode(file_get_contents('php://input'),true);
         foreach($json as $key => $value){
