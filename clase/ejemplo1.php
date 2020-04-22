@@ -19,17 +19,16 @@
             
         }
     }
-    //obtener un objeto segun sus datos
-    foreach($casa as $key => $value)
-    {
-        foreach($value as $clave => $valor){
-            if($tipoRoom == $valor){
-                $posicion = $key;
-                echo "Pertenece a: ".json_encode($casa1[$posicion]);
-                //echo ;
+    else{
+        //obtener un objeto segun sus datos
+        foreach($casa as $key => $value)
+        {
+            foreach($value as $clave => $valor){
+                if($tipoRoom == $valor){
+                    $posicion = $key;
+                    echo "Pertenece a: ".json_encode($casa1[$posicion]);
+                }
             }
         }
     }
-    
- 
 ?>
